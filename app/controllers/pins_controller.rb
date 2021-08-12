@@ -47,6 +47,15 @@ class PinsController < ApplicationController
     end
   end
 
+  def show_notes
+    @notes = Note.all
+    notes = []
+    for item in @notes
+      notes.push({description:item.description, created_at:(item.created_at.strftime('%I:%M %p UTC, %a %d %b %Y')), user_name:User.find(item.user_id).username, id:item.id, title:item.title})
+    end
+    render json: notes, status: 201
+  end
+
   def create
 
     @pin = Pin.create(pin_params)

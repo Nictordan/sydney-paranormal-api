@@ -9,6 +9,11 @@ Rails.application.routes.draw do
     get '/get_user', to: 'users#get_user'
     
     post '/add_pin', to: 'pins#create'
+    get '/pins', to: 'pins#index'
+    get '/pins/:id', to: 'pins#show'
+    get '/pin_notes/:id', to: 'pins#show_notes'
+    put '/pins/:id', to: 'pins#update'
+    delete '/pins/:id', to: 'pins#destroy'
     
     get '/pin_families/:id', to: 'pin_families#show'
 
