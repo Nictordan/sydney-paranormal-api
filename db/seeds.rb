@@ -59,4 +59,27 @@ if Pin.count == 0
       user_id: 3
     }
   ])
+
+  if Note.count == 0
+    notes = Note.create([
+      {
+        title: "David Habour's Female Doppelganger",
+        description: "There's been a rumour that a hideous female version of the actor David Habour is haunting civilians near the water. Beware!",
+        pin_id: 1,
+        user_id: 1
+      },
+      {
+        title: "The Phantom of the Opera",
+        description: "A bunch of former opera singers have turned into haunted phantoms!",
+        pin_id: 2,
+        user_id: 2
+      },
+      {
+        title: "The Garden Ghost",
+        description: "A strange ghost is haunting civilians at the botanic gardens!",
+        pin_id: 3,
+        user_id: 3
+      }
+    ])
+  end
 end
