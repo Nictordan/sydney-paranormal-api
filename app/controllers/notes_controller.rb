@@ -37,7 +37,7 @@ class NotesController < ApplicationController
   end
 
   def destroy
-
+    
   end
 
 

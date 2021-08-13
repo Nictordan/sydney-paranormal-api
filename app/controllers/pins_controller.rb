@@ -48,7 +48,7 @@ class PinsController < ApplicationController
   end
 
   def show_notes
-    @notes = Note.all
+    @notes = Note.where(pin_id: params[:id])
     notes = []
     for item in @notes
       notes.push({description:item.description, created_at:(item.created_at.strftime('%I:%M %p UTC, %a %d %b %Y')), user_name:User.find(item.user_id).username, id:item.id, title:item.title})
