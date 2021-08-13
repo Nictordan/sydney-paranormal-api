@@ -19,4 +19,4 @@ GitHub Repository: https://github.com/Nictordan/sydney-paranormal-api
 - Finally, the code was written in Ruby 2.7.2 In case the project fails to load correctly because of a mismatch between versions, please make sure to use version 2.7.2. 
 
 ---
-For full details on the documentation, please refer to the README file at the root directory of this organization: https://github.com/Nictordan
+For full details on the documentation, please refer to the **Full-App-Documentation** directory of this organization: https://github.com/Nictordan/full-app-documentation
