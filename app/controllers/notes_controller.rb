@@ -24,7 +24,7 @@ class NotesController < ApplicationController
 
     comments = []
     for item in @comments
-        comments.push({text:item.text, created_at:(item.created_at.strftime('%I:%M %p UTC, %a %d %b %Y')), user_name:User.find(item.user_id).username, id:item.id})
+        comments.push({text:item.text, created_at:(item.created_at.strftime('%I:%M %p UTC, %a %d %b %Y')), user_name:User.find(item.user_id).username, id:item.id, user_id:item.user_id})
     end
     data = {note: @note, comments: comments}
     render json: data, status: 201
