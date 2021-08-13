@@ -1,10 +1,12 @@
+# Sydney Paranormal - Backend
+
 ## Links
 
 Deployed app: https://sydney-paranormal.netlify.app/
 
 GitHub Repository: https://github.com/Nictordan/sydney-paranormal-api
 
-## Local Setup Instructions - Backend
+## Local Setup Instructions
 
 - Clone the `sydney-paranormal-api` repository.
 - Run `$ gem install bundler` (if you don't have the package manager Bundler installed).
